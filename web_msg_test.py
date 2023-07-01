@@ -34,7 +34,7 @@ class WebTest(unittest.TestCase):
         message.clear()
         message.send_keys("This is testing the form in my website using python and selenium")
         form.submit()
-        time.sleep(3)  # change to selenium wait
+        time.sleep(3)
         self.assertTrue(name.get_attribute("value") == "")
         
     def tearDown(self):
